@@ -22,7 +22,7 @@ const ArtworkCard = ({artwork}: Props) => {
       onPress={() => {
         navigation.navigate(Routes.ArtworkDetail, {artwork});
       }}>
-      <View>
+      <View style={styles.thumbnailContainerUpper}>
         <View style={styles.thumbnailContainer}>
           {artwork.thumbnail && (
             <Image
@@ -33,18 +33,18 @@ const ArtworkCard = ({artwork}: Props) => {
             />
           )}
         </View>
-        <Text style={[styles.titleText, {color: colors.text}]}>
-          {t['artworkCard.tapToReveal']}
-        </Text>
+        <Text style={styles.revealText}>{t['artworkCard.tapToReveal']}</Text>
       </View>
       <View style={styles.flex1}>
-        <Text style={[styles.titleText, {color: colors.text}]}>
-          {artwork.id}
-        </Text>
-        <Text style={[styles.titleText, {color: colors.text}]}>
+        <Text style={[styles.descriptionText, {color: colors.text}]}>
           {artwork.title}
         </Text>
-        <Text numberOfLines={3} style={[styles.flex1, {color: colors.text}]}>
+        <Text
+          numberOfLines={3}
+          style={[
+            styles.flex1,
+            {color: !artwork.description ? 'grey' : colors.text},
+          ]}>
           {artwork.description
             ? // Move this logic to model to store the description without html tags
               removeHtmlTags(artwork.description)

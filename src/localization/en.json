@@ -3,7 +3,7 @@
   "artworkCard.title": "Title",
   "artworkCard.description": "Description",
   "artworkCard.noDescription": "No description",
-  "artworkCard.tapToReveal": "Tap to reveal!",
+  "artworkCard.tapToReveal": "TAP\nTO\nSEE!",
   "favorites.noFavoritesYet": "No favorites yet",
   "gallery.title": "Artworks",
   "favorites.title": "Favorites",
@@ -11,5 +11,7 @@
   "gallery.errorLoadingMore": "An error occurred while loading more artworks",
   "gallery.languagePicker.pickLanguage": "Pick language",
   "artworkDetail.addedToFavorites": "Added to favorites!",
-  "artworkDetail.removedFromFavorites": "Removed from favorites"
+  "artworkDetail.removedFromFavorites": "Removed from favorites",
+  "artworkDetail.description": "Description",
+  "artworkDetail.authors": "Author(s)"
 }

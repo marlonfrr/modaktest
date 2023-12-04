@@ -85,8 +85,17 @@ const ArtworkDetail = ({_, route}) => {
           <Text style={[styles.titleText, {color: colors.text}]}>
             {artwork.title}
           </Text>
-          <Text style={{color: colors.text}}>
-            {removeHtmlTags(artwork.description)}
+          <Text style={[styles.subtitles, {color: colors.text}]}>
+            {t['artworkDetail.description']}
+          </Text>
+          <Text style={{color: !artwork.description ? 'grey' : colors.text}}>
+            {artwork.description
+              ? // Move this logic to model to store the description without html tags
+                removeHtmlTags(artwork.description)
+              : t['artworkCard.noDescription']}
+          </Text>
+          <Text style={[styles.subtitles, {color: colors.text}]}>
+            {t['artworkDetail.authors']}
           </Text>
           <Text style={{color: colors.text}}>{artwork.artist_display}</Text>
         </Animated.View>

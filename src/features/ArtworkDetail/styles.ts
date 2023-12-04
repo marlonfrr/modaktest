@@ -1,22 +1,31 @@
 import {StyleSheet} from 'react-native';
+import Measures from '../../utils/measures';
+import {ds} from '../../utils/ds';
 
 export default StyleSheet.create({
   container: {flex: 1, backgroundColor: 'white'},
   scrollcontainer: {
     flex: 1,
-    paddingHorizontal: 12,
-    paddingVertical: 24,
+    paddingHorizontal: Measures.spacing[12],
+    paddingVertical: Measures.spacing[24],
   },
   titleText: {
     fontWeight: 'bold',
   },
   image: {
     width: '100%',
-    height: 300,
+    height: ds.h / 2,
   },
   favoriteIcon: {
     position: 'absolute',
-    bottom: 8,
-    right: 4,
+    bottom: Measures.spacing[8],
+    right: Measures.spacing[4],
+  },
+  subtitles: {
+    fontWeight: 'bold',
+    fontStyle: 'italic',
+    color: 'grey',
+    marginBottom: Measures.spacing[4],
+    marginTop: Measures.spacing[8],
   },
 });
