@@ -1,0 +1,15 @@
+{
+  "tabs.favorites": "Favoritos",
+  "artworkCard.title": "Título",
+  "artworkCard.description": "Descripción",
+  "artworkCard.noDescription": "Sin descripción",
+  "artworkCard.tapToReveal": "¡Toca para ver!",
+  "favorites.noFavoritesYet": "¡Aún no tienes favoritos!",
+  "gallery.title": "Artworks",
+  "favorites.title": "Favoritos",
+  "gallery.errorLoading": "Ocurrió un error al cargar la galería",
+  "gallery.errorLoadingMore": "Ocurrió un error cargando más artworks",
+  "gallery.languagePicker.pickLanguage": "Selecciona idioma",
+  "artworkDetail.addedToFavorites": "Añadido a favoritos",
+  "artworkDetail.removedFromFavorites": "Eliminado de favoritos"
+}

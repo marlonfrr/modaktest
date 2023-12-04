@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "999750851773",
+    "project_id": "modaktest-476ac",
+    "storage_bucket": "modaktest-476ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999750851773:android:f1753efcad22f296016bd4",
+        "android_client_info": {
+          "package_name": "com.modaktest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEe_94xmdLazn5lyxmv3zH9e3w_vihorY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
